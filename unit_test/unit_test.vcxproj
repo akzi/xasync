@@ -110,8 +110,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\threadpool.hpp" />
-    <ClInclude Include="..\include\xipc.hpp" />
+    <ClInclude Include="..\include\xqueue.hpp" />
+    <ClInclude Include="..\include\xworker.hpp" />
+    <ClInclude Include="..\include\xasync.hpp" />
+    <ClInclude Include="xworker_pool.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="unit_test.cpp" />

@@ -15,10 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\xipc.hpp">
+    <ClInclude Include="..\include\xasync.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\threadpool.hpp">
+    <ClInclude Include="..\include\xworker.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xworker_pool.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\xqueue.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

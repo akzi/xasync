@@ -1,15 +1,15 @@
 #pragma once
-namespace xipc
+namespace xasync
 {
-	class threadpool
+	class xworker
 	{
 	public:
-		threadpool()
+		xworker()
 		{
 
 		}
 
-		template<T>
+		template<typename T>
 		void add(T &&action)
 		{
 			std::async(action);
