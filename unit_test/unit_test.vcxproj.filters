@@ -21,15 +21,18 @@
     <ClInclude Include="..\include\xworker.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="xworker_pool.hpp">
+    <ClInclude Include="..\include\xqueue.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\xqueue.hpp">
+    <ClInclude Include="..\include\xworker_pool.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="unit_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="http_server_.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

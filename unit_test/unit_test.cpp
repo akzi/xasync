@@ -7,37 +7,6 @@ xtest_run;
 
 
 
-template<typename Ret, typename ...Args, typename ...Params>
-Ret async(const std::function<Ret(Args...)> &action, Params &&...params)
-{
-	Ret ret;
-	auto action_wrap = [&](){
-		ret = std::move(action(std::forward<Params>(params)...));
-	};
-
-	return ret;
-}
-
-template<typename Ret, typename ...Args, typename ...Params>
-Ret async(Ret(action)(Args...), Params && ...params)
-{
-	Ret ret;
-	auto action_wrap = [&]{
-		ret = std::move(action(std::forward<Params>(params)...));
-	};
-	return ret;
-}
-
-
-template<typename Ret, typename Class, typename ...Args, typename ...Params >
-Ret async(Ret(Class::*action)(Args...), Class &inst, Params && ...params)
-{
-	Ret ret;
-	auto action_wrap = [&]()->Ret{
-		ret = std::move((inst.*action)(std::forward<Params>(params)...));
-	};
-	return ret;
-}
 
 
 struct add_functor 
